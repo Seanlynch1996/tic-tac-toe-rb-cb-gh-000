@@ -126,8 +126,10 @@ def current_player(board)
 end
 
 def play(board)
-  while (!over?(board))
+  done = false
+  while (!done)
     turn(board)
+    done = over?(board)
   end
 
   if (won?(board))
