@@ -128,7 +128,7 @@ end
 def play(board)
   count = 0
   done = false
-  while (!done)
+  until (done)
     turn(board)
     done = over?(board)
     if count >= 9
