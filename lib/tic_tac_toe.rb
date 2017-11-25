@@ -127,6 +127,8 @@ end
 
 def play(board)
   done = false
+  turn (board)
+  
   until (!done)
     turn(board)
     display_board(board)
