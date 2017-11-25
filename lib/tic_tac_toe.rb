@@ -129,6 +129,7 @@ def play(board)
   done = false
   until (!done)
     turn(board)
+    display_board(board)
     done = over?(board)
     if count >= 9
       break
