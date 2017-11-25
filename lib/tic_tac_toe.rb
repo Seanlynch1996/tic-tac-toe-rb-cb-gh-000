@@ -129,7 +129,7 @@ def play(board)
   done = false
   turn (board)
   
-  until (!done)
+  9.times do
     turn(board)
     display_board(board)
     done = over?(board)
