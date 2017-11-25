@@ -134,6 +134,7 @@ def play(board)
     if count >= 9
       break
     end
+    count += 1
   end
 
   if (won?(board))
