@@ -126,10 +126,14 @@ def current_player(board)
 end
 
 def play(board)
+  count = 0
   done = false
   while (!done)
     turn(board)
     done = over?(board)
+    if count >= 9
+      break
+    end
   end
 
   if (won?(board))
