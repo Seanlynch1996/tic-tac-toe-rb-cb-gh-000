@@ -80,7 +80,7 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, index, current_player = "X")
+def move(board, index, current_player)
   board[index] = current_player
 end
 
@@ -108,5 +108,24 @@ end
 def play(board)
   9.times do
     turn(board)
+  end
+end
+def turn_count(board)
+  counter = 0
+  board.each do |el|
+    if (el == " ")
+      counter += 1
+    end
+  end
+  return 9-counter
+end
+
+def current_player(board)
+  player = turn_count(board)
+  player = player % 2
+  if player == 1
+    return "O"
+  else
+    return "X"
   end
 end
