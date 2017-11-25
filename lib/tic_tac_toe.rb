@@ -124,3 +124,19 @@ def current_player(board)
     return "X"
   end
 end
+
+def play(board)
+  while (!over?(board))
+    turn(board)
+  end
+
+  if (won?(board))
+    winner = winner?(board)
+    puts "Congratulations #{winner}!"
+  else
+    puts "Cats Game!"
+  end
+end
+
+  
+
