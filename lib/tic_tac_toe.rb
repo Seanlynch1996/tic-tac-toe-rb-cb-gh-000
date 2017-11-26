@@ -100,8 +100,6 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, player)
     display_board(board)
-  else
-#    turn(board)
   end
 end
 
