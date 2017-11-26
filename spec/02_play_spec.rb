@@ -132,6 +132,6 @@ describe './lib/tic_tac_toe.rb' do
 
       play(board)
 
-    end
+
   end
 end
