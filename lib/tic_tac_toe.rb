@@ -101,7 +101,7 @@ def turn(board)
     move(board, index, player)
     display_board(board)
   else
-    turn(board)
+#    turn(board)
   end
 end
 
