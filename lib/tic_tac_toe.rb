@@ -124,9 +124,10 @@ def current_player(board)
 end
 
 def play(board)
-
-  9.times do
+  done = false
+  while (!done) do
     turn(board)
+    done = over?(board)
   end
 
   if (won?(board))
