@@ -115,7 +115,7 @@ describe './lib/tic_tac_toe.rb' do
 
       play(board)
     end
-#
+=end
     it 'plays through an entire game' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       allow($stdout).to receive(:puts)
@@ -135,4 +135,4 @@ describe './lib/tic_tac_toe.rb' do
     end
   end
 end
-=end
+
